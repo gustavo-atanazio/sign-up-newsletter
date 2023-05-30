@@ -31,7 +31,6 @@ main h1 {
 main p {
     font-size: 1.6rem;
     display: inline;
-    color: var(--dark-gray);
 }
 
 .list-container {
