@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --primary-color: #242742;
+    --gray: #9294A0;
+    --dark-gray: #36384E;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100vh;
+    padding: 3rem;
+}
+
+main div h1 {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+}
+
+main div p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+
+main div span {
+    font-weight: 700;
+}
+
+main a {
+    height: 4.5rem;
+    padding: 1.3rem;
+    border-radius: 0.7rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+}
