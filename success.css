@@ -9,6 +9,7 @@
     --primary-color: #242742;
     --gray: #9294A0;
     --dark-gray: #36384E;
+    --red: #FF6257;
 }
 
 body {
@@ -52,4 +53,34 @@ main a {
     color: #FFF;
     width: 100%;
     text-align: center;
+}
+
+/* /////// DESKTOP LAYOUT /////// */
+@media screen and (min-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        background-color: var(--dark-gray);
+    }
+
+    main {
+        background-color: #FFF;
+        width: 40%;
+        height: 50%;
+        gap: 3rem;
+        border-radius: 3rem;
+    }
+
+    main a {
+        transition: 0.4s;
+    }
+
+    main a:hover {
+        background-color: var(--red);
+        box-shadow: 0 10px 30px var(--red);
+    }
 }
