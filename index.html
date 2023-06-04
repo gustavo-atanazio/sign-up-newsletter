@@ -42,10 +42,13 @@
         </div>
   
         <form id="form">
-          <label for="email">Email address</label>
+          <div class="form-info">
+            <label for="email">Email address</label>
+            <small id="invalid">Valid email required</small>
+          </div>
   
           <div class="form-container">
-            <input type="email" name="email" id="email" placeholder="email@company.com">
+            <input type="email" class="email" id="email" placeholder="email@company.com">
   
             <button type="submit">Subscribe to monthly newsletter</button>
           </div>
