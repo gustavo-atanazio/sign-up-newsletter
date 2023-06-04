@@ -62,10 +62,24 @@ main li {
     gap: 1.3rem;
 }
 
-form label {
+.form-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 0.7rem;
+}
+
+.form-info label {
     color: var(--primary-color);
-    display: block;
     font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.form-info small {
+    display: none;
+    color: var(--red);
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -76,18 +90,23 @@ form label {
     padding: 0.7rem;
 }
 
-.form-container input, button {
+.form-container .email, button {
     height: 4.5rem;
     padding: 1.3rem;
     border-radius: 0.7rem;
 }
 
-.form-container input {
+.email {
     border: 0.19rem solid var(--gray);
     outline: 0;
 }
 
-.form-container input:focus {
+.invalid {
+    border-color: var(--red);
+    background-color: rgba(255, 98, 87, 0.4);
+}
+
+.form-container .email:focus {
     border-color: var(--dark-gray);
 }
 
