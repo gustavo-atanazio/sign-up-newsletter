@@ -1,5 +1,6 @@
 const form = document.getElementById("form");
 const emailInput = document.getElementById("email");
+const invalidAdvice = document.getElementById("invalid");
 
 form.addEventListener("submit", event => {
     event.preventDefault();
@@ -7,7 +8,10 @@ form.addEventListener("submit", event => {
     sessionStorage.setItem("Email", emailInput.value);
 
     if (emailInput.value === "") {
-        console.log("Input empty");
+        
+        invalidAdvice.style.display = "block";
+        emailInput.classList.add("invalid");
+
     } else {
         window.location.href = "success.html";
     }
