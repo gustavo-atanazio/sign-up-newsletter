@@ -1,5 +1,4 @@
-import emailInput from "./main";
-
 const emailView = document.getElementById("email-view");
+const email = sessionStorage.getItem("Email");
 
-emailView.innerText = emailInput.value;
+emailView.innerText = email;

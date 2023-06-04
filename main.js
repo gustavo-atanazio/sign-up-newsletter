@@ -4,6 +4,8 @@ const emailInput = document.getElementById("email");
 form.addEventListener("submit", event => {
     event.preventDefault();
 
+    sessionStorage.setItem("Email", emailInput.value);
+
     if (emailInput.value === "") {
         console.log("Input empty");
     } else {
@@ -11,5 +13,3 @@ form.addEventListener("submit", event => {
     }
 
 })
-
-export default emailInput;
